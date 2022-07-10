@@ -5,6 +5,8 @@ const TextArea = () => {
   const [markdown, setMarkdown] = useState(
     "# Welcome to Rapid Markdown Editor"
   );
+
+  // Download PDF Function
   const componentRef = useRef();
   const handlePrint = useReactToPrint({
     content: () => componentRef.current,
